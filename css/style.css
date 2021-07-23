@@ -1,0 +1,64 @@
+/*****entete de page*****/
+header{
+    background-color: blueviolet;
+    display: flex;
+}
+.logo1{
+    width:250px;
+}
+.logo2{
+    object-fit: contain;
+    width: 200px;
+}
+.fab {
+    margin-left: 47%;
+    font-size: 3.5rem;
+}
+a{
+    text-decoration: none;
+}
+
+/******ecriture*********/
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.Lfacebook{
+    color:#000 ;
+    text-align: center;
+    margin-left: 10px;
+}
+h3{
+    text-align: center;
+}
+
+/******corps de la page*******/
+main{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section{
+    width: 45%;
+    background-color: aquamarine;
+    padding: 10px 10px;
+}
+aside{
+   text-align: center;
+   background-color: aquamarine;
+
+}
+/******footer******/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.syndic{
+    padding-left: 5%;
+}
+ul{
+    list-style: none;
+}
