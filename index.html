@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="description" content="A definir avec karim">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/logoaïkido.webp">
+	<link rel="stylesheet" type="text/css" href="style.css">
     <title>Cercle intercommunal d'Aïkido</title>
 </head>
 <body>
     <header>
-        <img class="logo1" src="img/logoprincipalclub.webp" alt="logo principal"/>
+        <img class="logo1" src="images/logoprincipalclub.webp" alt="logo principal"/>
         <div class="lien">
             <h1>Cercle Intercommunal d'Aikido de Cesson Vert Saint Denis</h1>
             <h2>Retrouvez nous sur</h2>
@@ -19,9 +19,40 @@
                 <p class="Lfacebook">facebook</p>
             </a>
         </div>
-        <img class="logo2" src="img/logo aïkido.webp" alt="logo du club"/>
+        <img class="logo2" src="images/logoaïkido.webp" alt="logo du club"/>
     </header>
-    <h3>Bienvenue au Cercle Intercommunal d'Aikido de Cesson Vert Saint Denis !</h3>
+        <nav class="menuderoulant">
+            <ul class="menu1">
+                <li class="menu1A"><a href="#">Accueil</a></li>
+                <li class="menu1A"><a href="#">Contact</a></li>
+                <li class="menu1A"><a href="#">inscription</a></li>
+                                    <!-- Début du menu déroulant -->
+                <li class="menu1A"><a href="#">modalités et tarifs</a>
+                    <ul class="menu1">
+                        <li class="menu1A"><a href="modalités.html">modalités d'inscriptions</a></li>
+                        <li class="menu1A"><a href="tarifs.html">tarifs</a></li>
+                    </ul>
+                </li>
+                <li class="menu1A"><a href="#">nos dossiers</a>
+                    <ul class="menu1">
+                        <li class="menu1A"><a href="equipe.html">Equipe</a></li>
+                        <li class="menu1A"><a href="photos.html">Nos photos</a></li>
+                        <li class="menu1A"><a href="videos.html">Nos videos</a></li>
+                    </ul>   
+                </li>
+            </ul>
+        </nav>
+        <form>
+            <h3 class="formtitle">Connexion</h3>
+            <label><b>Nom d'utilisateur</b></label>
+            <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+
+            <label><b>Mot de passe</b></label>
+            <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+            <input type="submit" id='submit' value='LOGIN' >
+        </form>
+    <h3 class="welcometitle">Bienvenue au Cercle Intercommunal d'Aikido de Cesson Vert Saint Denis !</h3>
     <main>
         <section>
             <h3>histoire du club d'Aikido de Cesson Vert Saint Denis !</h3>
@@ -35,14 +66,16 @@
                 toujours presents dans le club et forment à leur tour de nouveaux élèves.</p>
                 <p>Ce club qui existe depuis 1974 jusqu à aujourdhui a toujours su garder à l'esprit de partager, communiquer la discipline de cet art martial,
                 ainsi que la bonne humeur conviviale qui font de ce club un endroit ou pratiquer l'aikido avec les valeurs transmises par O'Sensei (Morihei Ueshiba).</p>
-                <nav>
+                
+                <div class="prof_list">
                     <ul>
                         <li>Un professeur 4ème DAN et titulaire du BF (Brevet Federal)</li>
                         <li>Un autre  3ème DAN et titulaire du BF (Brevet Federal)</li>
                         <li>Un autre 2ème DAN</li>
                         <li>Enfin un troisième 1er DAN</li>
                     </ul>
-                </nav>
+                </div>
+
         </section>
         <section>
             <h3>Qu'est ce que l'Aikido ??</h3>
@@ -60,19 +93,20 @@
                 </blockquote>
                 <p>C’est en effectuant la synthèse de toutes les techniques des arts martiaux et des valeurs morales de l’Être Humain
                      que Morihei UESHIBA créa l’Aïkido :</p>
-                    <nav>
+                    <div class="definition">
                         <ul>
                             <li> AI : union, unification, harmonie </li>
                             <li> KI : énergie vitale</li>
                             <li> DO : voie, perspective, recherche</li>
                         </ul>
-                    </nav>
+                    </div>
                 <p>Sa pratique régulière vise à mieux communiquer en favorisant le développement harmonieux de chacun.
                 Son objectif n’est pas la destruction de l’adversaire, ni même la dissuasion par la crainte,
                 mais au contraire, un échange d’énergie propre à désamorcer l’agression et à évacuer la situation de conflit.</p>    
                 <p>L’aïkidoka qui utilise prioritairement l’esquive, guide l’attaque de son partenaire en le contrôlant au maximum 
                 jusqu’au point de déséquilibre.</p>
                 <p>À ce moment-là, l’aïkidoka a le choix entre la projection et l’immobilisation en fonction de l’efficacité recherchée.</p>
+            </article>
         </section>
     </main>
     <aside>
@@ -83,9 +117,8 @@
         <p>19h à 22h15 (1h arme/1h cours/1h preparation grade).</p>
         <h4>Le Samedi</h4>
         <p>De 10h à 12h30</p>
-        (2h30 preparation grade et cours enfants à<br\>
+        <p>(2h30 preparation grade et cours enfants à
          partir de 8 ans à 13 ans de 10h45 à 12h).</p>
-
         <h3>Horaires des cours (pendant les vacances):</h3>
         <p>Suivant les disponibilités du dojo</p>
         <h4>Le Mardi 20h à 22h</h4>
@@ -93,38 +126,47 @@
         <h4>Jeudi 20h à 22h</h4>
         <p>Suivant les disponibilités du dojo (2h de cours).</p>
     </aside>
+    <section class="localisation">
+        <h3>Lieu des entrainnements</h3>
+        <article class="localisationA">
+            <div class="localisation_title">
+                <h4>Gymnase Sonia Delaunay</h4> 
+                <p>rue Aimé Césaire</p>
+                <p>77240 Saint Denis</p>
+            </div>
+            <img class="google_card" src="images/carte_google.webp" alt="lieu des entrainnements"/>
+        </article>
+    </section>
 
     <footer>
-        <nav>
-            <h4>Nos partenaires locaux</h4>
+        <div class="footer_list">
             <ul>
                 <li>
                     <a href="#">
-                        <img src="img/logoseine&marne (1).webp" alt="logo du departement Seine et marne"/>
+                        <img src="images/logoseine_marne.webp" alt="logo du departement Seine et marne"/>
                     </a>
                 </li>
                 
             </ul>
-        </nav>
-        <nav>
+        </div>
+        <div class="footer_list">
             <ul>
                 <li class="syndic">
                     <a href="#">
-                        <img src="img/logo syndicatintercommunal.webp" alt="logo du syndicat intercommunal"/>
+                        <img src="images/logosyndicatintercommunal.webp" alt="logo du syndicat intercommunal"/>
                     </a>
                 </li>
             </ul>
-        </nav>
-        <nav>
+        </div>
+        <div class="footer_list">
             <ul>
-                <h4>La feredation</h4>
                 <li>
                     <a href="#">
-                        <img src="img/logofederation.webp" alt="logo du syndicat intercommunal"/>
+                        <img src="images/logofederation.webp" alt="logo du syndicat intercommunal"/>
                     </a>
                 </li>
             </ul>
-        </nav>
+        </div>
     </footer>
     <script src="https://kit.fontawesome.com/8fc61f04f6.js" crossorigin="anonymous"></script>
 </body>
