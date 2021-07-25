@@ -1,0 +1,292 @@
+/******************************paarametres css generaux*****************************/
+/*****entete de page*****/
+header{
+    background-color: #000;
+    display: flex;
+}
+.logo1{
+    width:250px;
+}
+.logo2{
+    object-fit: contain;
+    width: 200px;
+}
+.fab {
+    margin-left: 47%;
+    font-size: 3.5rem;
+    color:lightblue;
+}
+a{
+    text-decoration: none;
+}
+/*****menu deroulant*******/
+nav.menuderoulant{
+    display: flex;
+    justify-content: space-around;
+}
+.menu1A {
+    list-style:none;
+    color:#FFF;
+    padding:10px 50px;
+    font-size:20px;
+    text-decoration:none;
+}
+
+.menuderoulant .menu1 {
+    background-color:#000;
+    padding:0;
+    margin:0;
+}
+
+.menuderoulant .menu1 .menu1A {
+    list-style: none;
+    line-height:44px;
+    float:left;
+    background-color:red;
+}
+
+.menuderoulant .menu1 .menu1A a {
+    color:#fff;
+    padding:20px;
+    font-size:20px;
+    text-decoration:none;
+}
+
+.menu1A a:hover {
+    border-bottom:3px #FFF solid;
+}
+
+.menuderoulant .menu1 .menu1A .menu1 { 
+    display:none; 
+} 
+
+.menuderoulant .menu1 .menu1A:hover .menu1 { 
+    z-index:99999;
+    display:list-item;
+    position:absolute;
+    margin-top:5px;
+    margin-left:-10px;
+}
+
+.menuderoulant .menu1 .menu1A:hover .menu1 .menu1A {
+    float:none;
+}
+/******formulaire********/
+form{
+    text-align: center;
+    margin-right: 5%;
+}
+/******ecriture*********/
+h1{
+    text-align: center;
+    color:#fff;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+}
+
+.Lfacebook{
+    color:#fff ;
+    text-align: center;
+    margin-left: 10px;
+
+}
+
+h3{
+    text-align: center;
+}
+
+.welcometitle{
+    color: #fff;
+}
+
+.formtitle{
+    color: #FFF;
+    margin-left: 5%;
+}
+
+/******corps de la page*******/
+
+body{
+    background-color: #000;
+}
+
+main{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section{
+    width: 45%;
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+aside{
+   text-align: center;
+   background-color:aqua;
+}
+
+.localisation{
+    width: 95%;
+}
+
+.localisationA{
+    display: flex;
+    flex-direction:row;
+}
+
+.google_card{
+    width:70%;
+    margin-left: 5%;
+}
+
+/******footer******/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+    margin-top: 5%;
+}
+
+.syndic{
+    padding-left: 5%;
+}
+
+ul{
+    list-style: none;
+}
+
+/*******************************page tarif****************************************/
+.tarif{
+    width:100%;
+    margin-top: 10%;
+    background-color: rgb(221, 47, 47);
+}
+
+.tarif_price{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFF;
+}
+
+.price_title{
+    color: #fff;
+}
+
+/***********************************page modalité****************************************/
+.modalites{
+    width:100%;
+    margin-top: 10%;
+    background-color: rgb(221, 47, 47);
+}
+.modalite_paragraphe{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFF;
+}
+/**********************************page contact***********************************/
+
+h1{
+    text-align: center;
+    color: #fff;
+}
+
+.form-style {
+    margin:10px auto;
+    width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+  @media screen and (max-width: 640px) {
+    .form-style {
+      width: 100%;
+    }
+  }
+
+.form-style td {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+  }
+
+.form-style label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+    color: #FFF;
+  }
+
+.form-style .required{
+    color:red;
+  }
+
+.form-style input[type=submit], .form-style input[type=reset]{
+    background: red;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+    margin-left: 20%;
+  }
+
+.form-style input[type=submit]:hover, .form-style input[type=reset]:hover{
+    background: #4eb5f1;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+  }
+  .form-style input[type=reset]{
+      margin-left: 25px;
+  }
+
+.form-style .field-textarea{
+    height: 100px;
+  }
+
+.form-style input[type=text], 
+.form-style input[type=email],
+textarea{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+  }
+
+.form-style .long{
+    width: 100%;
+  }
+
+.form-style input[type=text]:focus, 
+.form-style input[type=email]:focus,
+.form-style textarea:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+  }
+
+.error{
+    color: #D8000C;
+    background-color: #FFBABA;
+  }
+
+
+
+
+
+
